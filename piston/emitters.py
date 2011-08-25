@@ -159,8 +159,8 @@ class Emitter(object):
                 v = lambda f: getattr(data, f.attname)
 
                 if handler:
-                    fields = getattr(handler, 'fields')    
-                
+                    fields = getattr(handler, 'fields')
+
                 if not fields or hasattr(handler, 'fields'):
                     """
                     Fields was not specified, try to find teh correct
